@@ -1,0 +1,46 @@
+@import "../../../main.scss";
+.game_btn {
+  background-color: $red;
+  width: 140px;
+  height: 35px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .btn_overlay {
+    border-radius: 8px;
+    border: 1px solid $white;
+    height: 33px;
+    width: 137px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    .btn_text {
+      font-weight: 300;
+      font-family: $jp;
+      font-size: 0.7rem;
+      margin: 0 5px;
+    }
+    .btn_icon {
+      margin-top: 2px;
+    }
+    .btn_icon_right {
+      transition: 0.3s ease-in-out;
+      margin-left: 10px;
+    }
+    .btn_icon_left {
+      transition: 0.3s ease-in-out;
+      margin-right: 10px;
+    }
+  }
+  .btn_overlay:hover > .btn_icon_right {
+    transform: translateX(20%);
+    transition: 0.3s ease-in-out;
+  }
+  .btn_overlay:hover > .btn_icon_left {
+    transform: translateX(-20%);
+    transition: 0.3s ease-in-out;
+  }
+}

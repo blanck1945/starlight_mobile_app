@@ -1,0 +1,48 @@
+@import "../../main.scss";
+.chara_box {
+  width: 100%;
+  min-height: 700px;
+  .chara_school {
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 255px;
+    justify-content: center;
+    align-items: center;
+    .school_banner {
+      width: 360px;
+    }
+  }
+  .school_para {
+    width: 55%;
+    margin: 15px auto;
+    font-family: $jp;
+    text-align: center;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    font-size: 0.7rem;
+    color: $dark;
+    .para_text {
+      font-weight: 300;
+    }
+  }
+  .profile_chara {
+    display: grid;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 50px;
+    grid-template-columns: 17% 17% 17%;
+    .profile_img {
+      height: 300px;
+      cursor: pointer;
+      width: 95%;
+      transition: 0.3s ease-in-out;
+      margin: 0 8px;
+      margin-bottom: 10px;
+    }
+  }
+}

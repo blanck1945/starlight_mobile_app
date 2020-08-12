@@ -1,0 +1,117 @@
+@import "../../../main.scss";
+.main_footer {
+  width: 100%;
+  margin-top: 40px;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .mobile_footer {
+    width: 60%;
+    margin-top: 15px;
+    min-height: 250px;
+    border: 2px solid $grey;
+    cursor: pointer;
+    padding: 8px 6px;
+    padding-left: 14px;
+    display: flex;
+    transition: 0.3s ease-in-out;
+    .footer_img {
+      height: 120px;
+      width: 120px;
+    }
+    .mobile_data_box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .data_box {
+        display: flex;
+        align-items: center;
+        margin: 8px auto;
+        justify-content: space-evenly;
+        width: 95%;
+        min-height: 40px;
+      }
+      .mobile_btn_box {
+        display: flex;
+        margin: 14px auto;
+      }
+    }
+    .disclaimer {
+      font-weight: 300;
+      font-family: $jp;
+      color: $text;
+      font-size: 0.8rem;
+    }
+  }
+  .mobile_footer:hover {
+    border-color: $red;
+    transition: 0.3s ease-in-out;
+  }
+  .footer_social {
+    width: 30%;
+    margin: 25px auto;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    .twi {
+      border: none;
+      border-radius: 50%;
+      color: white;
+      width: 50px;
+      height: 50px;
+      background-color: #1da1f2;
+      font-size: 1.2rem;
+      transition: 0.3s ease-in-out;
+
+      cursor: pointer;
+    }
+    .face {
+      background-color: #4267b2;
+      border: none;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      border-radius: 50%;
+      color: white;
+      font-size: 1.2rem;
+      transition: 0.3s ease-in-out;
+    }
+    .social_icon:hover {
+      transform: translateY(-15%);
+      transition: 0.3s ease-in-out;
+    }
+  }
+  .logo_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .logo {
+      width: 200px;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+    }
+    .logo:hover {
+      opacity: 0.7;
+      transition: 0.3s ease-in-out;
+    }
+  }
+  .inq {
+    font-size: 0.8rem;
+    font-family: $jp;
+    font-weight: 300;
+  }
+  .arrow_up {
+    position: absolute;
+    font-size: 3.5rem;
+    cursor: pointer;
+    right: 70px;
+    transition: 0.3s ease-in-out;
+  }
+  .arrow_up:hover {
+    transform: translateY(-20%);
+    transition: 0.3s ease-in-out;
+  }
+}

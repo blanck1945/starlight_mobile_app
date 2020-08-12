@@ -1,0 +1,75 @@
+@import "../../../main.scss";
+.youtube_banner {
+  width: 100%;
+  height: 210px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 15px auto;
+  background-size: 16rem;
+  background-image: url("../../../assets/utils-img/btn-switch-revue-visible-karen.png");
+  .banner_overlay {
+    background-color: $red;
+    width: 100%;
+    opacity: 0.95;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .banner_links {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      .item_links {
+        width: 120px;
+        height: 55px;
+        display: flex;
+        align-items: center;
+        border-left: 1px solid $grey;
+        justify-content: center;
+        color: $white;
+        cursor: pointer;
+        font-size: 1rem;
+        text-decoration: none;
+        font-family: $jp;
+        transition: 0.3s ease-in-out;
+      }
+      .right {
+        border-right: 1px solid $grey;
+      }
+      .item_links:hover {
+        transition: 0.3s ease-in-out;
+        background-color: $white;
+        color: black;
+      }
+    }
+    .youtube_link {
+      width: 25%;
+      margin-top: 10px;
+      background-color: $white;
+      height: 75px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 15px;
+      cursor: pointer;
+      border: 1px solid black;
+      transition: 0.3s ease-in-out;
+      .youtube {
+        font-size: 2.5rem;
+        color: #ff0000;
+      }
+      .youtube > h3 {
+        font-family: $jp;
+        font-size: 0.9rem;
+      }
+      .karen_hikari {
+        width: 111px;
+      }
+    }
+    .youtube_link:hover {
+      opacity: 0.8;
+      transition: 0.3s ease-in-out;
+    }
+  }
+}

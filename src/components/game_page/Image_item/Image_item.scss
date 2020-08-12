@@ -1,0 +1,23 @@
+@import "../../../main.scss";
+
+.img_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .header_img {
+    width: 300px;
+    margin-top: 35px;
+  }
+  .game_img {
+    width: 580px;
+    margin: 15px auto;
+  }
+  .game_text {
+    width: 60%;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 300;
+    font-family: $jp;
+    color: $text;
+  }
+}

@@ -1,0 +1,51 @@
+@import "../../../../main.scss";
+.event_dis_box {
+  width: 98%;
+  margin: 5px auto;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.3s ease-in-out;
+  padding: 0 9px;
+  cursor: pointer;
+  .event_data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 250px;
+    font-family: $jp;
+    justify-content: space-evenly;
+    .event_date {
+      font-size: 0.7rem;
+      font-family: $jp;
+      font-weight: 300;
+    }
+    .event_name {
+      transition: 0.3s ease-in-out;
+      font-family: $jp;
+      font-weight: 300;
+      font-size: 0.9rem;
+    }
+  }
+  .event_type {
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    font-weight: 300;
+    font-size: 0.9rem;
+    font-family: $jp;
+    height: 30px;
+  }
+}
+.event_dis_box:hover {
+  background-color: #eee;
+  transition: 0.3s ease-in-out;
+}
+.event_dis_box:hover > .event_data > .event_name {
+  color: $red;
+  transition: 0.3s ease-in-out;
+}

@@ -1,0 +1,37 @@
+@import "../../../main.scss";
+.login_form {
+  width: 70%;
+  min-height: 300px;
+  margin: auto;
+  margin-top: 12%;
+  display: flex;
+  .form_header {
+    color: #eee;
+    margin: 30px auto;
+  }
+  .post_form {
+    padding-bottom: 15px;
+    width: 95%;
+    border-radius: 4px;
+    justify-content: flex-start;
+  }
+  .form_btn {
+    margin-top: 35px;
+  }
+  .error_div {
+    background-color: brown;
+    min-width: 190px;
+    height: 50px;
+    margin: 15px auto;
+    padding: 2px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    .error_text {
+      color: $white;
+      font-weight: 300;
+      font-family: $jp;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@import "../../../../main.scss";
+.reference_box {
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .label {
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: $text;
+    margin-left: 4px;
+    cursor: pointer;
+  }
+  .label_red:hover {
+    color: $red;
+  }
+  .label_violet:hover {
+    color: $violet;
+  }
+  .label_green:hover {
+    color: $green;
+  }
+  .label_orange:hover {
+    color: $orange;
+  }
+}

@@ -1,0 +1,16 @@
+@import "../../../main.scss";
+.event_header {
+  width: 93%;
+  background-color: black;
+  color: $white;
+  height: 30px;
+  margin: 4px 0;
+  padding-left: 6px;
+  display: flex;
+  align-items: center;
+  .header_label {
+    font-family: $jp;
+    font-weight: 300;
+    font-size: 1rem;
+  }
+}

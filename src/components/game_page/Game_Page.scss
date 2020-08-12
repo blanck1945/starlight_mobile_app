@@ -1,0 +1,39 @@
+@import "../../main.scss";
+.game_page {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .game_box {
+    margin-top: 225px;
+    width: 80%;
+    min-height: 300px;
+    .game_option_bar {
+      width: 65%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: auto;
+      height: 70px;
+    }
+    .game_data_box {
+      width: 100%;
+      border: 1px solid $grey;
+      min-height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+  .game_btn_box {
+    width: 60%;
+    height: 50px;
+    margin: 25px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

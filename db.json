@@ -1,0 +1,26 @@
+{
+  "chara": [
+    {
+      "id": 1,
+      "name": "Karen Aijou",
+      "voice": "Momoyo Koyama",
+      "school": "Seisho Music Academy 99th Class",
+      "student_id": 1,
+      "color": "rgb(251, 84, 88)",
+      "description": "An enthusiastic Stage Girl who was captivated by the revue 'Starlight' she saw as a young child Although she's always in a good mood,she's not so good at early morning lessons.She participates in mysterious revues with Hikari,whom she's been friends with since a young age.",
+      "revue_img": "https://vignette.wikia.nocookie.net/revuestarlight/images/8/80/Karen_Aijo_Revue_Outfit.png/revision/latest?cb=20180726154824",
+      "student_img": "https://vignette.wikia.nocookie.net/revuestarlight/images/4/42/Karen_Aijo_School_Uniform.png/revision/latest?cb=20180726154824"
+    },
+    {
+      "id": 2,
+      "name": "Hikari Kagura",
+      "voice": "Mimori Suzuko",
+      "school": "Seisho Music Academy 99th Class",
+      "student_id": 29,
+      "color": "rgb(250, 60, 60)",
+      "description": "An enthusiastic Stage Girl who was captivated by the revue 'Starlight' she saw as a young child Although she's always in a good mood,she's not so good at early morning lessons.She participates in mysterious revues with Hikari,whom she's been friends with since a young age.",
+      "revue_img": "https://vignette.wikia.nocookie.net/revuestarlight/images/8/80/Karen_Aijo_Revue_Outfit.png/revision/latest?cb=20180726154824",
+      "student_img": "https://vignette.wikia.nocookie.net/revuestarlight/images/4/42/Karen_Aijo_School_Uniform.png/revision/latest?cb=20180726154824"
+    }
+  ]
+}

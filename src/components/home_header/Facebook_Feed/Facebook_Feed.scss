@@ -1,0 +1,25 @@
+@import "../../../main.scss";
+.facebook_feed {
+  margin: 15px auto;
+  margin-bottom: 45px;
+  width: 35%;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .feed_title {
+    color: $red;
+    padding-bottom: 8px;
+    border-bottom: 2px solid $red;
+  }
+  .facebook_box {
+    width: 100%;
+    margin: auto;
+    margin-top: 25px;
+    background-color: #eee;
+    min-height: 400px;
+    .feed {
+      width: 100%;
+    }
+  }
+}

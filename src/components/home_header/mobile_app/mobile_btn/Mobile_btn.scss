@@ -1,0 +1,24 @@
+@import "../../../../main.scss";
+
+.mobile_btn {
+  background-color: rgb(34, 33, 33);
+  color: $white;
+  opacity: 1;
+  width: 190px;
+  cursor: pointer;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  margin: 0 8px;
+  justify-content: space-evenly;
+  height: 50px;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+  .mobile_icon {
+    font-size: 1.5rem;
+  }
+}
+.mobile_btn:hover {
+  background-color: black;
+  transition: 0.2s ease-in-out;
+}

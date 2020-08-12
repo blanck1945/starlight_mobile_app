@@ -1,0 +1,96 @@
+@import "../../main.scss";
+.navbar {
+  min-width: 99%;
+  position: fixed;
+  height: 70px;
+  z-index: 7;
+  transition: 0.3s ease-in-out;
+  background-color: grey;
+  opacity: 0.9;
+  .white_overlay {
+    z-index: 7;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    border-bottom: 1px solid $red;
+    min-width: 99vw;
+    height: 70px;
+    display: flex;
+    transition: 0.3s ease-in-out;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    opacity: 1;
+    .logo {
+      width: 130px;
+      position: absolute;
+      transition: 0.3s ease-in-out;
+      top: 10px;
+      left: 10px;
+      cursor: pointer;
+    }
+    .logo:hover {
+      transition: 0.3s ease-in-out;
+      opacity: 0.8;
+    }
+    .nav_item_box {
+      width: 45%;
+      display: flex;
+      transition: 0.3s ease-in-out;
+      align-items: center;
+      justify-content: space-evenly;
+      height: 100px;
+      .nav_item {
+        width: 24%;
+        height: 60px;
+        text-decoration: none;
+        cursor: pointer;
+        border-left: 1px solid #eee;
+        transition: 0.3s ease-in-out;
+        display: flex;
+        align-items: center;
+        color: black;
+        justify-content: center;
+      }
+      .nav_item:hover {
+        background-color: $red;
+        border-radius: 4px;
+        color: $white;
+        transition: 0.3s ease-in-out;
+      }
+    }
+  }
+}
+.small_nav {
+  min-width: 99%;
+  position: fixed;
+  height: 50px;
+  z-index: 7;
+  background-color: grey;
+  opacity: 0.9;
+  transition: 0.3s ease-in-out;
+  .small_overlay {
+    z-index: 7;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    border-bottom: 1px solid $red;
+    min-width: 99vw;
+    height: 50px;
+    transition: 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    opacity: 1;
+    .logo {
+      width: 110px;
+      transition: 0.3s ease-in-out;
+    }
+    .nav_item_box {
+      height: 80px;
+      width: 55%;
+      .nav_item {
+        transition: 0.3s ease-in-out;
+        height: 40px;
+        width: 30%;
+      }
+    }
+  }
+}

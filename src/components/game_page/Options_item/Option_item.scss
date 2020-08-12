@@ -1,0 +1,38 @@
+@import "../../../main.scss";
+.option_box {
+  height: 30px;
+  width: 100px;
+  background-color: $red;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .option_overlay {
+    border-radius: 8px;
+    padding: 0 4px;
+    color: $white;
+    cursor: pointer;
+    font-family: $jp;
+    font-weight: 300;
+    font-size: 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid $white;
+    width: 97.5px;
+    margin-top: 0.5px;
+    height: 27px;
+    .star {
+      width: 12px;
+    }
+    .active_star {
+      width: 12px;
+      opacity: 0;
+      transition: 0.4s ease-in-out;
+    }
+  }
+  .option_overlay:hover > .active_star {
+    opacity: 1;
+    transition: 0.4s ease-in-out;
+  }
+}

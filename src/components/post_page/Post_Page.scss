@@ -1,0 +1,50 @@
+@import "../../main.scss";
+.post_page {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  .post_page_nav {
+    width: 75%;
+    margin: 105px auto;
+    margin-bottom: 0;
+    height: 55px;
+    display: flex;
+    background-color: $red;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .post_dis {
+    width: 100%;
+    margin: 15px auto;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .post_home {
+      padding: 6px 9px;
+      z-index: 7;
+      position: fixed;
+      width: 100vw;
+      min-height: 115%;
+      color: $red;
+      background-color: #eee;
+      transition: 0.5s ease-in-out;
+    }
+    .post_log {
+      transition: 0.5s ease-in-out;
+      padding: 6px 14px;
+      width: 90%v;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $red;
+      background-color: #eee;
+      .post_header {
+        padding: 9px;
+      }
+    }
+  }
+}

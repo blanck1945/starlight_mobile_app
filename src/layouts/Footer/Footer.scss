@@ -1,0 +1,9 @@
+@import "../../main.scss";
+.footer {
+  width: 100%;
+  min-height: 150px;
+  border-top: 2px solid #eee;
+  background-color: $red;
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,19 @@
+@import "../../../main.scss";
+.title_header {
+  width: 100%;
+  height: 90px;
+
+  background-color: $white;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 120px;
+  border-bottom: 2px solid $red;
+  border-top: 2px solid $red;
+  justify-content: center;
+  .header_label {
+    font-size: 1.7rem;
+    font-family: $jp;
+    color: $red;
+  }
+}
