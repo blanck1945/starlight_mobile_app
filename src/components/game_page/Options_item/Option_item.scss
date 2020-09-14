@@ -1,10 +1,11 @@
 @import "../../../main.scss";
 .option_box {
   height: 30px;
-  width: 100px;
+  min-width: 10%;
   background-color: $red;
   border-radius: 8px;
   display: flex;
+  margin: 0 2px;
   justify-content: center;
   align-items: center;
   .option_overlay {
@@ -19,11 +20,19 @@
     align-items: center;
     justify-content: space-between;
     border: 1px solid $white;
-    width: 97.5px;
+    width: 98%;
     margin-top: 0.5px;
     height: 27px;
     .star {
       width: 12px;
+    }
+    .option_label {
+      width: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 2px;
+      margin: 0 2px;
     }
     .active_star {
       width: 12px;

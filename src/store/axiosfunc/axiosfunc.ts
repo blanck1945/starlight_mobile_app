@@ -3,16 +3,43 @@ import { Dispatch } from "react";
 import { Action } from "redux";
 import { http } from "../../utils/api";
 import { setEvents, setSingleEvent } from "../actions/actions/eventsActions";
-import { setServerRes, setUser } from "../actions/actions/utilsActions";
+import {
+  setServerRes,
+  setUser,
+  setPageTitle,
+} from "../actions/actions/utilsActions";
 import { setCharas, setSingleChara } from "../actions/actions/charaActions";
 import { CharaType, UserType } from "../interface/interface";
+
+export const fecthAllCharas = () => {
+  return async (dispatch: Dispatch<Action>) => {
+    try {
+      const { data } = await Axios.get(http.api_chara);
+      dispatch(setCharas(data));
+    } catch (err) {
+      console.log(err);
+    }
+  };
+};
+
+export const fetchSingleDevChara = (id: number) => {
+  return async (dispatch: Dispatch<Action>) => {
+    try {
+      const { data } = await Axios.get(http.api_single_json_chara + id);
+      //dispatch(setServerRes(data));
+      dispatch(setSingleChara(data));
+      dispatch(setPageTitle(data.chara_name));
+    } catch (err) {
+      console.log(err);
+    }
+  };
+};
 
 export const fetchEvents = () => {
   return async (dispatch: Dispatch<Action>) => {
     try {
       const { data } = await Axios.get(http.api_events);
       dispatch(setServerRes(data));
-      console.log(data.data);
       dispatch(setEvents(data.data));
     } catch (err) {
       console.log(err);

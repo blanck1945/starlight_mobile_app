@@ -11,6 +11,8 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 
 import "./Event_Single_Page.scss";
 import Event_Header from "./event_header/Event_Header";
+import Event_Text from "./event_text/Event_Text";
+import Event_Social_Div from "./event_social_div/Event_Social_Div";
 const event_img = require("../../assets/event_img/taiwan_event.jpg");
 
 const Event_Single_Page = () => {
@@ -41,9 +43,139 @@ const Event_Single_Page = () => {
         />
         <Event_Header
           label={
-            state.single_event ? state.single_event.event_name : "Event N1"
+            state.single_event
+              ? state.single_event.event_headers.header_1
+              : "header 1"
+          }
+          header={
+            state.single_event
+              ? state.single_event.event_headers_label.label_1
+              : ["header", "1"]
           }
         />
+        <Event_Text
+          label_box={"Event Details"}
+          square_title={true}
+          square_icon={true}
+          details={
+            state.single_event
+              ? state.single_event.event_paras.para_1
+              : ["uno", "dos"]
+          }
+        />
+        <Event_Text
+          label_box={"How to Partipate"}
+          num={true}
+          square_title={true}
+          square_icon={true}
+          details={
+            state.single_event
+              ? state.single_event.event_paras.para_2
+              : ["uno", "dos"]
+          }
+        />
+        <Event_Header
+          label={
+            state.single_event
+              ? state.single_event.event_headers.header_2
+              : "header 2"
+          }
+          header={
+            state.single_event
+              ? state.single_event.event_headers_label.label_2
+              : ["header", "2"]
+          }
+        />
+        <Event_Text
+          details={
+            state.single_event
+              ? state.single_event.event_paras.para_3
+              : ["event", "event_details_2"]
+          }
+        />
+
+        <Event_Text
+          square_title={true}
+          square_icon={true}
+          label_box={
+            "Star Gems x6,200 (w/ chance at Taiwanese event) Pack Details"
+          }
+          details={
+            state.single_event
+              ? state.single_event.event_paras.para_4
+              : ["event", "event_details_header2_2"]
+          }
+        />
+        <Event_Text
+          details={
+            state.single_event
+              ? state.single_event.event_paras.para_5
+              : ["event", "event_details_header2_3"]
+          }
+        />
+        <Event_Header
+          label={
+            state.single_event
+              ? state.single_event.event_headers.header_3
+              : "header 2"
+          }
+          header={
+            state.single_event
+              ? state.single_event.event_headers_label.label_3
+              : ["header", "2"]
+          }
+        />
+        <Event_Text
+          num={true}
+          label_box={"How to Apply"}
+          square_title={true}
+          details={
+            state.single_event
+              ? state.single_event.event_paras.para_6
+              : ["event", "event_details_header2_3"]
+          }
+        />
+        <Event_Text
+          label_box={"Terms of Service"}
+          square_icon={true}
+          square_title={true}
+          details={
+            state.single_event
+              ? state.single_event.event_paras.para_7
+              : ["event", "event_details_header2_3"]
+          }
+        />
+        <Event_Text
+          num={true}
+          label_box={"-Your application will be voided with any of the below."}
+          square_title={true}
+          details={
+            state.single_event
+              ? state.single_event.event_paras.para_8
+              : ["event", "event_details_header2_3"]
+          }
+        />
+        <Event_Text
+          square_title={true}
+          label_box={
+            "Regarding Application, Choosing of Participants, and Contact to Chosen Participants"
+          }
+          details={
+            state.single_event
+              ? state.single_event.event_paras.para_9
+              : ["event", "event_details_header2_3"]
+          }
+        />
+        <Event_Text
+          label_box={"Other Notes"}
+          square_title={true}
+          details={
+            state.single_event
+              ? state.single_event.event_paras.para_10
+              : ["event", "event_details_header2_3"]
+          }
+        />
+        <Event_Social_Div />
       </div>
       <Youtube_banner />
     </div>

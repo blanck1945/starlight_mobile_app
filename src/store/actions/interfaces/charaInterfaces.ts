@@ -1,9 +1,24 @@
 import * as charaTypes from "../../ReduxTypes/charaTypes";
-import { CharaType } from "../../interface/interface";
+import { CharaType, GameChara } from "../../interface/interface";
+
+export interface GetAllProfile {
+  type: typeof charaTypes.GET_ALL_PROFILES;
+  payload: any;
+}
 
 export interface GetAllCharas {
   type: typeof charaTypes.GET_ALL_CHARAS;
   payload: CharaType[];
+}
+
+export interface SelectGameChara {
+  type: typeof charaTypes.SELECT_CHARA;
+  payload: GameChara[];
+}
+
+export interface StartTheGame {
+  type: typeof charaTypes.ENTER_THE_GAME;
+  payload: GameChara;
 }
 
 export interface GetSingleChara {
@@ -21,6 +36,9 @@ export interface PostChara {
 }
 
 export type CharaActions =
+  | StartTheGame
+  | SelectGameChara
+  | GetAllProfile
   | GetAllCharas
   | GetSingleChara
   | DestroySingleChara

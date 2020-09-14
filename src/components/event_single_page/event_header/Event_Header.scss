@@ -1,16 +1,30 @@
 @import "../../../main.scss";
-.event_header {
-  width: 93%;
-  background-color: black;
-  color: $white;
-  height: 30px;
-  margin: 4px 0;
-  padding-left: 6px;
+.single_text_box {
+  width: 85%;
+  min-height: 90px;
   display: flex;
-  align-items: center;
-  .header_label {
+  flex-direction: column;
+  .event_header {
+    width: 93%;
+    background-color: black;
+    color: $white;
+    height: 30px;
+    margin: 8px 5%;
+    padding-left: 6px;
+    display: flex;
+    align-items: center;
+    .header_label {
+      font-family: $jp;
+      font-weight: 300;
+      letter-spacing: 0.25px;
+      font-size: 1rem;
+    }
+  }
+  .text_label {
     font-family: $jp;
-    font-weight: 300;
-    font-size: 1rem;
+    color: $text;
+    margin: 0 5%;
+    font-weight: 400;
+    font-size: 0.8rem;
   }
 }

@@ -1,15 +1,16 @@
 @import "../../../main.scss";
 .mobile_app {
-  width: 60%;
+  width: 70%;
   height: 70px;
   position: absolute;
-  z-index: 7;
-  bottom: 55px;
-  background-image: url("https://images.assetsdelivery.com/compings_v2/lovender/lovender1906/lovender190600056.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+  bottom: 15px;
   .white_overlay {
-    width: 100%;
+    max-width: 100%;
     background-color: white;
-    opacity: 0.9;
     height: 100%;
     display: flex;
     align-items: center;

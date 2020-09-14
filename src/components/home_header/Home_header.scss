@@ -4,23 +4,22 @@
   display: flex;
   flex-direction: column;
   .home_bg_img {
-    margin-top: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 70px;
     justify-content: center;
-    height: 500px;
+    height: 100%;
     width: 99vw;
     .bg_img {
       width: 99vw;
-      height: 504px;
+      height: 100%;
     }
     .logo {
-      width: 260px;
+      width: 350px;
       position: absolute;
-      bottom: 60px;
-      right: -130px;
-      margin-bottom: 30px;
+      bottom: 40px;
+      right: -175px;
     }
   }
 }
@@ -28,6 +27,7 @@
   width: 100%;
   height: 100%;
   z-index: 10;
+  background-color: chocolate;
   position: absolute;
   background-color: $white;
   background-image: url("../../assets/utils-img/btn-switch-revue-visible-karen.png");

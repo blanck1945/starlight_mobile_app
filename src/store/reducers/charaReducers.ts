@@ -1,10 +1,12 @@
 import * as charaTypes from "../ReduxTypes/charaTypes";
-import { CharaState } from "../interface/interface";
+import { CharaState, GameChara } from "../interface/interface";
 import { CharaActions } from "../actions/interfaces/charaInterfaces";
 
 const charaInitialState: CharaState = {
   charas: [],
   single_chara: undefined,
+  game_chara: undefined,
+  single_game_chara: undefined,
 };
 
 export default (state = charaInitialState, action: CharaActions) => {
@@ -23,6 +25,16 @@ export default (state = charaInitialState, action: CharaActions) => {
       return {
         ...state,
         single_chara: undefined,
+      };
+    case charaTypes.SELECT_CHARA:
+      return {
+        ...state,
+        game_chara: action.payload,
+      };
+    case charaTypes.ENTER_THE_GAME:
+      return {
+        ...state,
+        single_game_chara: action.payload,
       };
     case charaTypes.POST_CHARA:
       return {

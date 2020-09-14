@@ -1,0 +1,69 @@
+@import "../../main.scss";
+.select_chara {
+  width: 80%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding-top: 200px;
+  background-image: url("../../assets/game_bg/school_select.jpg");
+  background-size: cover;
+  .chara_stats_box {
+    position: relative;
+    left: 200px;
+    min-height: 350px;
+    bottom: 60px;
+    width: 250px;
+    border: 1px solid rgba(255, 255, 255, 0.267);
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.541);
+    .single_chara_box {
+      display: flex;
+      flex-direction: column;
+      .chara_stat {
+        height: 30px;
+        padding-left: 4px;
+        padding-top: 6px;
+        border-bottom: 1px solid $white;
+      }
+      .stat_top {
+        border-radius: 12px 12px 0 0;
+      }
+      .stat_bot {
+        border-radius: 0 0 12px 12px;
+      }
+      .red {
+        text-align: center;
+        color: $white;
+      }
+    }
+  }
+  .img_chara {
+    margin-bottom: 125px;
+    padding: 24px;
+    width: 160px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+  .big {
+    width: 220px;
+  }
+}
+.enter_btn {
+  border: none;
+  width: 100%;
+  border-radius: 0 0 12px 12px;
+  text-align: center;
+  color: $white;
+  cursor: pointer;
+  border: none;
+  height: 50px;
+  padding-bottom: 5px;
+}
+.enter_btn:hover {
+  background-color: $white;
+  color: black;
+  transition: 0.3s ease-in-out;
+}

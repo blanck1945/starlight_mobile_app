@@ -7,8 +7,11 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 import "./Chara_Single_Page.scss";
 import Youtube_banner from "../home_header/youtube_banner/Youtube_banner";
 import { useDispatch, useSelector } from "react-redux";
-import { GlobalState } from "../../store/interface/interface";
+import { GlobalState, Photo, CharaType } from "../../store/interface/interface";
 import { cleanSingleChara } from "../../store/actions/actions/charaActions";
+import { revueArr, studentArr } from "../../utils/student_photo";
+import { Link } from "react-router-dom";
+import { fetchSingleDevChara } from "../../store/axiosfunc/axiosfunc";
 
 const flower = require("../../assets/utils-img/btn-switch-uniform-visible-karen.png");
 const crown = require("../../assets/utils-img/btn-switch-revue-visible-karen.png");
@@ -24,6 +27,32 @@ const Chara_SIngle_page = () => {
 
     return () => dispatch(cleanSingleChara());
   }, []);
+
+  const getRevuePhoto = () => {
+    const photo: any = revueArr.find(
+      (el: any, index: number) =>
+        index === charaState.single_chara.chara_revue_img
+    );
+    return photo.default;
+  };
+
+  const getStudentPhoto = () => {
+    const photo: any = studentArr.find(
+      (el: any, index: number) =>
+        index === charaState.single_chara.chara_student_img
+    );
+    return photo.default;
+  };
+
+  const consoleId = (id: number) => {
+    if (id === 0) {
+      dispatch(fetchSingleDevChara(6));
+    } else if (id === 7) {
+      dispatch(fetchSingleDevChara(1));
+    } else {
+      dispatch(fetchSingleDevChara(id));
+    }
+  };
 
   return (
     <div className="chara_single_div">
@@ -89,23 +118,31 @@ const Chara_SIngle_page = () => {
               effect="blur"
               src={
                 charaState.single_chara !== undefined && img === true
-                  ? "assets/" + charaState.single_chara.chara_revue_img
-                  : "assets/" + charaState.single_chara.chara_student_img
+                  ? getRevuePhoto()
+                  : getStudentPhoto()
               }
               className={loading ? "profile_img opa" : "profile_img"}
             />
           </motion.div>
         </div>
       ) : (
-        <h3>Loading...</h3>
+        <div className="chara_single_page"></div>
       )}
       <div className="next_box">
-        <span className="box_span">
+        <span
+          className="box_span"
+          onClick={() => consoleId(charaState.single_chara.id - 1)}
+        >
           <IoIosArrowBack className="next_icon icon_left" />
           Back
         </span>
-        <span className="box_span">List</span>
-        <span className="box_span right">
+        <Link to="/chara" className="box_span links">
+          List
+        </Link>
+        <span
+          className="box_span right"
+          onClick={() => consoleId(charaState.single_chara.id + 1)}
+        >
           Next
           <IoIosArrowForward className="next_icon icon_right" />
         </span>

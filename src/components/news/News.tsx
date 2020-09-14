@@ -2,29 +2,19 @@ import * as React from "react";
 import Title_Header from "../characters/title_header/Title_Header";
 import Events_box from "../home_header/events_box/Events_box";
 import Youtube_banner from "../home_header/youtube_banner/Youtube_banner";
-import useSWR from "swr";
-import Axios from "axios";
-import { http } from "../../utils/api";
-
-import "./News.scss";
-import { RootStateOrAny, useSelector, useDispatch } from "react-redux";
-import { fetchEvents } from "../../store/axiosfunc/axiosfunc";
+import { useSelector, useDispatch } from "react-redux";
 import { GlobalState } from "../../store/interface/interface";
 
-const getEvents = async () => {
-  try {
-    const { data } = await Axios.get(http.api_events);
-    return data;
-  } catch (err) {}
-};
+import "./News.scss";
+import { fetchAllEvents } from "../../store/axiosfunc/axios_dev-json";
 
 const News = () => {
-  const { data, error } = useSWR("events", getEvents);
-
   const state = useSelector((state: GlobalState) => state.eventReducer);
   const dispatch = useDispatch();
   React.useEffect(() => {
-    dispatch(fetchEvents());
+    if (state.events.length === 0) {
+      dispatch(fetchAllEvents());
+    }
     window.scrollTo(0, 0);
   }, []);
 
@@ -43,3 +33,11 @@ const News = () => {
 };
 
 export default News;
+
+/*
+nos movemos en el marco de la teoria objetiva del valor. que significa que hay algo, en este caso el trabajo, que determina los costos de los bienes y servicios. Más el margen definen los precios en el mercado.
+
+costo trabajo + margen = precio de las cosas.
+"los autriacos inventaron esto de la competencia porque se olvidan de los margenes"
+"solo el amor como elemento ordenador busca el bien comun de la sociedad"
+*/

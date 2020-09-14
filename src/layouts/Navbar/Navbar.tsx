@@ -11,10 +11,11 @@ const Navbar = () => {
     window.onscroll = () => {
       setScroll(window.pageYOffset);
     };
-  }, []);
+  }, [scroll]);
 
+  console.log(scroll);
   return (
-    <div className={scroll === 0 ? "navbar" : "navbar small_nav"}>
+    <div className={scroll < 75 ? "navbar" : "navbar small_nav"}>
       <div
         className={
           scroll === 0 ? "white_overlay" : "white_overlay small_overlay"
@@ -35,6 +36,9 @@ const Navbar = () => {
           </NavLink>
           <NavLink to="/chara" className="nav_item">
             Characters
+          </NavLink>
+          <NavLink to="/select_chara" className="nav_item">
+            Demo
           </NavLink>
         </div>
       </div>

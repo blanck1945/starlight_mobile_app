@@ -17,7 +17,7 @@ const Youtube_banner = () => {
           <Link to="/game" className="item_links">
             Game
           </Link>
-          <Link to="chara" className="item_links">
+          <Link to="chara" className="item_links right">
             Characters
           </Link>
         </div>

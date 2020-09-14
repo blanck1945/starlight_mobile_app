@@ -2,25 +2,274 @@
   "chara": [
     {
       "id": 1,
-      "name": "Karen Aijou",
-      "voice": "Momoyo Koyama",
-      "school": "Seisho Music Academy 99th Class",
-      "student_id": 1,
-      "color": "rgb(251, 84, 88)",
-      "description": "An enthusiastic Stage Girl who was captivated by the revue 'Starlight' she saw as a young child Although she's always in a good mood,she's not so good at early morning lessons.She participates in mysterious revues with Hikari,whom she's been friends with since a young age.",
-      "revue_img": "https://vignette.wikia.nocookie.net/revuestarlight/images/8/80/Karen_Aijo_Revue_Outfit.png/revision/latest?cb=20180726154824",
-      "student_img": "https://vignette.wikia.nocookie.net/revuestarlight/images/4/42/Karen_Aijo_School_Uniform.png/revision/latest?cb=20180726154824"
+      "chara_name": "Karen Aijou",
+      "chara_voice": "Momoyo Koyama",
+      "chara_school": "Seisho Music Academy 99th Class",
+      "chara_student_id": 1,
+      "chara_color": "rgb(251, 84, 88)",
+      "chara_description": [
+        "An enthusiastic Stage Girl who was captivated by the revue 'Starlight'",
+        "she saw as a young child Although she's always in a good mood,she's not so good at early morning lessons.",
+        "She participates in mysterious revues with Hikari,whom she's been friends with since a young age."
+      ],
+      "chara_profile_img": "../assets/profile_img/img-seisho-karen.png",
+      "chara_revue_img": 0,
+      "chara_student_img": 0
     },
     {
       "id": 2,
-      "name": "Hikari Kagura",
-      "voice": "Mimori Suzuko",
-      "school": "Seisho Music Academy 99th Class",
-      "student_id": 29,
-      "color": "rgb(250, 60, 60)",
-      "description": "An enthusiastic Stage Girl who was captivated by the revue 'Starlight' she saw as a young child Although she's always in a good mood,she's not so good at early morning lessons.She participates in mysterious revues with Hikari,whom she's been friends with since a young age.",
-      "revue_img": "https://vignette.wikia.nocookie.net/revuestarlight/images/8/80/Karen_Aijo_Revue_Outfit.png/revision/latest?cb=20180726154824",
-      "student_img": "https://vignette.wikia.nocookie.net/revuestarlight/images/4/42/Karen_Aijo_School_Uniform.png/revision/latest?cb=20180726154824"
+      "chara_name": "Hikari Kagura",
+      "chara_voice": "Mimori Suzuko",
+      "chara_school": "Seisho Music Academy 99th Class",
+      "chara_student_id": 29,
+      "chara_color": "#6292e9",
+      "chara_description": [
+        "An enthusiastic Stage Girl who was captivated by the revue 'Starlight'",
+        "she saw as a young child Although she's always in a good mood",
+        "she's not so good at early morning lessons.",
+        "She participates in mysterious revues with Hikari",
+        "whom she's been friends with since a young age."
+      ],
+      "chara_profile_img": "../assets/profile_img/img-seisho-hikari.png",
+      "chara_revue_img": 1,
+      "chara_student_img": 1
+    },
+    {
+      "id": 3,
+      "chara_name": "Mahiru Tsuyusaki",
+      "chara_voice": "Iwata Haruki",
+      "chara_school": "Seisho Music Academy 99th Class",
+      "chara_student_id": 17,
+      "chara_color": "#61bf99",
+      "chara_description": [
+        "A Stage Girl who performs with great energy on the stage",
+        "but is somewhat withdrawn otherwise.",
+        "Mahiru is roommates with Karen and admires her positivity and energy",
+        "but ever since Karen's friend Hikari returned, she's felt torn..."
+      ],
+      "chara_profile_img": "../assets/profile_img/img-seisho-mahiru.png",
+      "chara_revue_img": 2,
+      "chara_student_img": 2
+    },
+    {
+      "id": 4,
+      "chara_name": "Sijou Claudine",
+      "chara_voice": "Aiba Aina",
+      "chara_school": "Seisho Music Academy 99th Class",
+      "chara_student_id": 11,
+      "chara_color": "#fe9952",
+      "chara_description": [
+        "Has a Japanese father and a French mother.",
+        "Highly skilled, she has often performed",
+        "on stage since she was a young child.",
+        "However, since joining Seisho Academy,",
+        "the powerful presence of Maya",
+        "has formed into something of a rival for Claudine."
+      ],
+      "chara_profile_img": "../assets/profile_img/img-seisho-mahiru.png",
+      "chara_revue_img": 3,
+      "chara_student_img": 3
+    },
+    {
+      "id": 5,
+      "chara_name": "Tendou Maya",
+      "chara_voice": "Tomita Maho",
+      "chara_school": "Seisho Music Academy 99th Class",
+      "chara_student_id": 18,
+      "chara_color": "rgb(203, 198, 204)",
+      "chara_description": [
+        "The child of a famous stage actor and a prima donna.",
+        "She has a strong build and a powerful voice.",
+        "In spite of her ability, she never rests easy,",
+        "and is always aiming to shoot higher."
+      ],
+      "chara_profile_img": "../assets/profile_img/img-seisho-mahiru.png",
+      "chara_revue_img": 4,
+      "chara_student_img": 4
+    },
+    {
+      "id": 6,
+      "chara_name": "Junna Hoshimi",
+      "chara_voice": "Hinata Sato",
+      "chara_school": "Seisho Music Academy 99th Class",
+      "chara_student_id": 25,
+      "chara_color": "#95caed",
+      "chara_description": [
+        "An honor student who is the oldest in her class",
+        "and also serves as the class representative. ",
+        "Although she has excellent judgment, she tends to overthink.",
+        "She wanted to become a Stage Girl in spite of her parents' objections,",
+        "and she often struggles with worries",
+        "over her skills compared to Maya and the others."
+      ],
+      "chara_profile_img": "../assets/profile_img/img-seisho-mahiru.png",
+      "chara_revue_img": 5,
+      "chara_student_img": 5
+    }
+  ],
+  "game_chara": [
+    {
+      "id": 1,
+      "chara_name": "Aijou Karen",
+      "chara_hp": 180,
+      "chara_attack": 15,
+      "chara_magic": 23,
+      "chara_defense": 12,
+      "chara_magic_defense": 12,
+      "chara_special_attack": 19,
+      "chara_special_defense": 13,
+      "chara_speed": 24,
+      "chara_color": "rgb(251, 84, 88)",
+      "chara_spells": ["Fireball", "Double Edge"],
+      "chara_img": 0
+    },
+    {
+      "id": 2,
+      "chara_name": "Hikari Kagura",
+      "chara_hp": 210,
+      "chara_attack": 18,
+      "chara_magic": 18,
+      "chara_defense": 14,
+      "chara_magic_defense": 13,
+      "chara_special_attack": 21,
+      "chara_special_defense": 15,
+      "chara_speed": 18,
+      "chara_color": "#6292e9",
+      "chara_spells": ["Ice Shoot", "Helix Dance"],
+      "chara_img": 1
+    },
+    {
+      "id": 3,
+      "chara_name": "Mahiru Tsuyusaki",
+      "chara_hp": 165,
+      "chara_attack": 15,
+      "chara_magic": 24,
+      "chara_defense": 12,
+      "chara_magic_defense": 22,
+      "chara_special_attack": 22,
+      "chara_special_defense": 13,
+      "chara_speed": 14,
+      "chara_color": "#61bf99",
+      "chara_spells": ["Green Blast", "Steel Defense"],
+      "chara_img": 2
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "event_official_name": "Taiwan Offline Event",
+      "event_common_name": "Taiwan Event",
+      "event_publish_day": "2019.05.10",
+      "event_type": "Live/Event",
+      "event_img": "",
+      "event_color": "rgb(149, 115, 177)",
+      "event_day": "5/25 (Sat.)",
+      "event_hour": "16:00 – 17:00 (Taiwan time)",
+      "event_venue": "Taisugar Hotel, Taipei Taiwan",
+      "event_headers": {
+        "header_1": "Taiwan Offline Event",
+        "header_2": "Please Read",
+        "header_3": "Notes About Applying"
+      },
+      "event_headers_label": {
+        "label_1": [
+          "We’re holding an offline event in Taipei, Taiwan on 2019/5/25!",
+          "Maho Tomita and Momoyo Koyama, the voice actresses of characters Karen Aijo and Maya Tendo, will be in attendance!"
+        ],
+        "label_2": [
+          "(5/10 Addition)",
+          "An error in the notes has been corrected.",
+          "Your application will be complete once you have input your Player ID and email address.",
+          "A confirmation email will not be sent."
+        ],
+        "label_3": [
+          "*BE SURE to check the below before applying.",
+          "*This event will be held in Taiwan.",
+          "*After you have successfully applied, a message stating such will display.",
+          "*Emails confirming who is chosen to attend will be sent at a later date ONLY to those who have been chosen to attend."
+        ]
+      },
+      "event_paras": {
+        "para_1": [
+          "-Schedule: 5/25 (Sat.) 16:00 – 17:00 (Taiwan time)",
+          "-Venue: Taisugar Hotel, Taipei Taiwan",
+          "-Details",
+          "Player Q&A time",
+          "Vs. Revue time with the voice actresses",
+          "Game time with the voice actresses",
+          "*The above content may be subject to change without prior notice",
+          "-Who’s Coming?",
+          "Momoyo Koyama (Karen Aijo)",
+          "Maho Tomita (Maya Tendo)"
+        ],
+        "para_2": [
+          "Read the application agreement.",
+          "Purchase the “Star Gems x6,200 (w/ chance at Taiwanese event)” pack purchasable one time only during the availability period to obtain the chance win an invitation to attend the event.",
+          "After you have purchased the above pack, head to the application site and enter your Player ID and e-mail address.",
+          "110 of the people that applied will be chosen at random and will be given an invitation to attend the event.",
+          "Only those chosen to attend the event will be sent an e-mail with details regarding attending the event."
+        ],
+        "para_3": [
+          "*Please read the application agreement before applying.",
+          "*This event will be held in Taiwan. You are solely responsible for any costs incurred to attend the event such at transportation, hotel fees, etc.",
+          "*The results of the raffle to decide the winners will be sent in an e-mail to ONLY the winners at a later date.",
+          "*You must agree to the participation conditions set out in the Application Agreement in order to apply for a chance to win an invitation to attend the event.",
+          "*Please make sure to bring your phone so that you can show your Player ID upon entry to the venue. You will be denied entry if we cannot confirm your Player ID."
+        ],
+        "para_4": [
+          "-Availability: 5/8 – 5/12",
+          "-Application Period: 5/8 – 5/12",
+          "-Winners Announced: 5/15",
+          "*This pack can only be purchased once per player."
+        ],
+        "para_5": [
+          "An error in the notes has been corrected.",
+          "Your application will be complete once you have input your Player ID and email address.",
+          "A confirmation email will not be sent."
+        ],
+        "para_6": [
+          "-In order to apply, the purchase of the “Star Gems x6,200 (w/ chance at Taiwanese event) Pack” and a Revue Starlight Re LIVE Player ID number are required to apply and participate.",
+          "-“Star Gems x6,200 (w/ chance at Taiwanese event) Pack” may only be purchased once per person during the availability."
+        ],
+        "para_7": [
+          "-One Player ID may only be used to apply once. If a single person is found to have applied with multiple Player ID numbers at a later date, they will be counted as a single application.",
+          "-Your will be unable to apply if any of the below apply to you.",
+          "1. You do not have a Revue Starlight Re LIVE Player ID number",
+          "2. You have not purchased the pack within the stated period of availability before the participants are chosen.",
+          "3. You do not input your Player ID on the application site."
+        ],
+        "para_8": [
+          "Your application contains insufficient or incorrect information.",
+          "You are found to have violated any article of these terms of service",
+          "We have determined that you are using a third party’s Player ID.",
+          "You uninstall Revue Staright Re LIVE between the time of your application and the time that we choose participants.",
+          "We have determined that you are engaging in monetary transactions or political or religious activities within the app or with regards to the event.",
+          "We have determined that you have engaged in any damaging or inappropriate action to a third party."
+        ],
+        "para_9": [
+          "-Purchase of “Star Gems x6,200 (w/ chance at Taiwanese event) Pack” does NOT complete your application. Be sure to apply from the website after purchasing.",
+          "-Information you submit will be used solely for the purpose of choosing participants to the event and for confirming identities on the day of the event.",
+          "-If you change your email address before we have contacted chosen participants, in the case that you were chosen, we will be unable to contact you.",
+          "-The ability to participate in this event cannot is not transferrable.",
+          "-Details of contact to chosen participants are subject to change without notice.",
+          "-We are unable to respond to inquiries regarding the chosen participants or participation in the event.",
+          "-Contact to chosen participants may take more time than expected.",
+          "*Please see the in-game notices for details on the event."
+        ],
+        "para_10": [
+          "-The ability to participate in this event cannot be sold and is not transferrable. In the case that such a listing is found, we will request that it be taken down.",
+          "Additionally, if you are found to have purchased the right to entry, or if it is deemed that the likelihood of such was high, you will be unable to participate in the event.",
+          "-We cannot take responsibility for any trouble or damages incurred between applicants or third parties.",
+          "-Any fees incurred by Internet connection or use of data are the responsibility of the user, and we cannot be held responsible for any issues that arise due to connection problems.",
+          "*This event will be held in Taiwan. We cannot reimburse any costs incurred (travel, lodging, etc.) in attending the event.",
+          "-Please bring the device with Revue Starlight Re LIVE installed to the event. We will use it to confirm your Player ID number.",
+          "-In the case that we cannot confirm your Player ID, you will be unable to participate in the event.",
+          "-The application period is subject to change without notice.",
+          "-All details of this event and campaign are subject to change without notice.",
+          "-These terms of service are based on the laws of Japan.",
+          "-Your entry is taken as you agreeing to the terms of service."
+        ]
+      }
     }
   ]
 }

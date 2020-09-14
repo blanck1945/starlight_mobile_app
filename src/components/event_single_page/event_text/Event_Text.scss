@@ -1,0 +1,36 @@
+@import "../../../main.scss";
+.event_text_box {
+  width: 85%;
+  .text_box {
+    margin: 8px 5%;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .square_box {
+      display: flex;
+      align-items: center;
+      .text_square {
+        font-size: 0.8rem;
+        color: $red;
+      }
+      .text_black {
+        font-family: $jp;
+        margin-left: 4px;
+        font-size: 0.8rem;
+        letter-spacing: 0.35px;
+      }
+    }
+    .detail_text {
+      font-family: $jp;
+      font-weight: 300;
+      font-size: 0.8rem;
+      text-align: center;
+      color: $text;
+      .red_num {
+        color: $red;
+        font-weight: 700;
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.event_social_box {
+  width: 50%;
+  min-height: 200px;
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  .star_logo {
+    width: 125px;
+  }
+  .social_media_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    height: 80px;
+    .icon {
+      width: 60px;
+      margin: 0 9px;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+    }
+    .icon:hover {
+      transform: translateY(-7%);
+      transition: 0.3s ease-in-out;
+    }
+  }
+}

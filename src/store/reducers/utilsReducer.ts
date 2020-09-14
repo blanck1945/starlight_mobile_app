@@ -11,6 +11,11 @@ const utilsInitialState: UtilsState = {
 
 export default (state = utilsInitialState, action: ServerActions) => {
   switch (action.type) {
+    case utilsTypes.SET_PAGE_TITLE:
+      return {
+        ...state,
+        page_title: action.payload,
+      };
     case utilsTypes.SET_SERVER_RES:
       return {
         ...state,

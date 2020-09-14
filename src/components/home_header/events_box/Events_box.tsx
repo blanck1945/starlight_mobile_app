@@ -12,7 +12,6 @@ interface EventBoxProps {
 }
 
 const Events_box = ({ list, data }: EventBoxProps) => {
-  console.log(data);
   return (
     <div className="event_box">
       <h3 className="event_title">News</h3>

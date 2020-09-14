@@ -1,7 +1,7 @@
 @import "../../../../main.scss";
 
 .mobile_btn {
-  background-color: rgb(34, 33, 33);
+  background-color: rgb(0, 0, 0);
   color: $white;
   opacity: 1;
   width: 190px;
@@ -19,6 +19,6 @@
   }
 }
 .mobile_btn:hover {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.801);
   transition: 0.2s ease-in-out;
 }

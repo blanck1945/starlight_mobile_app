@@ -8,8 +8,8 @@ import "./Home_header.scss";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchEvents, fetchCharas } from "../../store/axiosfunc/axiosfunc";
 import { GlobalState } from "../../store/interface/interface";
+import { fetchAllEvents } from "../../store/axiosfunc/axios_dev-json";
 
 const logo = require("../../assets/nav/logo.jpg");
 const crown = require("../../assets/utils-img/btn-switch-revue-visible-karen.png");
@@ -20,7 +20,9 @@ const Home_header = () => {
 
   React.useEffect(() => {
     window.scrollTo(0, 0);
-    dispatach(fetchEvents());
+    dispatach(fetchAllEvents());
+
+    document.title = "Shoujo Kageki Revue Starlight";
   }, []);
 
   return (
@@ -28,7 +30,6 @@ const Home_header = () => {
       <div className="home_bg_img">
         <LazyLoadImage
           effect="blur"
-          placeholderSrc={crown.default}
           src="https://static.zerochan.net/Shoujo%E2%98%86Kageki.Revue.Starlight.-ReLIVE-.full.2553649.png"
           alt="bg_img"
           className="bg_img"

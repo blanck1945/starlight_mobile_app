@@ -15,6 +15,8 @@ import "./main.scss";
 import Event_Single_Page from "./components/event_single_page/Event_Single_Page";
 import { GlobalState } from "./store/interface/interface";
 import Post_Page from "./components/post_page/Post_Page";
+import Shoujo_Revue_Game from "./components/shoujo_revue_game/Shoujo_Revue_Game";
+import Select_chara from "./components/select_chara/Select_chara";
 const crown = require("./assets/utils-img/btn-switch-revue-visible-karen.png");
 
 const App: React.FunctionComponent = () => {
@@ -37,6 +39,8 @@ const App: React.FunctionComponent = () => {
         <Route path="/game" component={Game_page} />
         <Route path="/single_event" component={Event_Single_Page} />
         <Route path="/post_page" component={Post_Page} />
+        <Route path="/select_chara" component={Select_chara} />
+        <Route path="/shoujo_game" component={Shoujo_Revue_Game} />
       </Switch>
       <Main_footer />
     </div>
