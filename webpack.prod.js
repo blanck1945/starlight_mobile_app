@@ -11,5 +11,4 @@ module.exports = merge(common, {
     },
     plugins: [new CleanWebpackPlugin()],
     devtool: "cheap-module-eval-source-map",
-
 });

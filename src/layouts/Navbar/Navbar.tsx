@@ -36,9 +36,6 @@ const Navbar = () => {
           <NavLink to="/chara" className="nav_item">
             Characters
           </NavLink>
-          <NavLink to="/select_chara" className="nav_item">
-            Demo
-          </NavLink>
         </div>
       </div>
     </div>

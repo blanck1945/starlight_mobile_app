@@ -26,6 +26,17 @@ export const fetchAllDataFromJson = () => {
   };
 };
 
+export const fecthAllCharas = () => {
+  return async (dispatch: Dispatch<Action>) => {
+    try {
+      const { data } = await Axios.get(http.api_chara);
+      dispatch(setCharas(data));
+    } catch (err) {
+      console.log(err);
+    }
+  };
+};
+
 export const fetchAllEvents = () => {
   return async (dispatch: Dispatch<Action>) => {
     try {

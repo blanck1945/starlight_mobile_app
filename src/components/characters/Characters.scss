@@ -40,14 +40,14 @@
   .profile_chara {
     display: grid;
     align-items: center;
-    width: 100%;
+    width: 50%;
     justify-content: center;
     margin: 0 12px;
     margin-top: 15px;
     margin-bottom: 50px;
-    grid-template-columns: 18% 18% 18%;
+    grid-template-columns: 27% 27% 27%;
     .profile_img {
-      height: 270px;
+      height: 35%;
       cursor: pointer;
       width: 95%;
       transition: 0.3s ease-in-out;

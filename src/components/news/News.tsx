@@ -33,11 +33,3 @@ const News = () => {
 };
 
 export default News;
-
-/*
-nos movemos en el marco de la teoria objetiva del valor. que significa que hay algo, en este caso el trabajo, que determina los costos de los bienes y servicios. Más el margen definen los precios en el mercado.
-
-costo trabajo + margen = precio de las cosas.
-"los autriacos inventaron esto de la competencia porque se olvidan de los margenes"
-"solo el amor como elemento ordenador busca el bien comun de la sociedad"
-*/

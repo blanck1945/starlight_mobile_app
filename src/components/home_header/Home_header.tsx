@@ -23,8 +23,8 @@ const Home_header = () => {
 
   React.useEffect(() => {
     window.scrollTo(0, 0);
-    dispatach(fetchAllEvents());
-    dispatach(fetchAllDataFromJson());
+    //dispatach(fetchAllEvents());
+    //dispatach(fetchAllDataFromJson());
     document.title = "Shoujo Kageki Revue Starlight";
   }, []);
 
@@ -33,17 +33,10 @@ const Home_header = () => {
       <div className="home_bg_img">
         <LazyLoadImage
           effect="blur"
-          src="https://static.zerochan.net/Shoujo%E2%98%86Kageki.Revue.Starlight.-ReLIVE-.full.2553649.png"
-          alt="bg_img"
-          className="bg_img"
-        />
-        <LazyLoadImage
-          effect="blur"
           src={logo.default}
           alt="logo"
           className="logo"
         />
-        <Mobile_app />
       </div>
       <Youtube_Video />
       <Events_box list={true} data={eventState.events} />
@@ -54,3 +47,11 @@ const Home_header = () => {
 };
 
 export default Home_header;
+
+/*
+  <LazyLoadImage
+          effect="blur"
+          src="https://static.zerochan.net/Shoujo%E2%98%86Kageki.Revue.Starlight.-ReLIVE-.full.2553649.png"
+          alt="bg_img"
+          className="bg_img"
+        />*/

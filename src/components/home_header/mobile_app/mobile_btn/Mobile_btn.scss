@@ -4,18 +4,28 @@
   background-color: rgb(0, 0, 0);
   color: $white;
   opacity: 1;
-  width: 190px;
+  min-width: 21%;
   cursor: pointer;
   border-radius: 4px;
   display: flex;
   align-items: center;
   margin: 0 8px;
+  padding: 0 5px;
   justify-content: space-evenly;
   height: 50px;
   text-decoration: none;
   transition: 0.2s ease-in-out;
   .mobile_icon {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+  }
+  .mobile_text_box {
+    font-size: 1rem;
+    .mobile_text {
+      font-size: 0.8rem;
+    }
+    .mobile_lable {
+      font-size: 0.9rem;
+    }
   }
 }
 .mobile_btn:hover {

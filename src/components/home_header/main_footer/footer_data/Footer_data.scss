@@ -8,9 +8,15 @@
   justify-content: space-between;
   .footer_header {
     display: flex;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 45% 45%;
+    justify-content: center;
     align-items: center;
     .crown {
       width: 40px;
+      margin-right: 5px;
+      margin: auto;
     }
     .header_title {
       font-size: 0.9rem;

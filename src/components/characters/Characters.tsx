@@ -5,13 +5,16 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import { useHistory } from "react-router-dom";
 import { motion } from "framer-motion";
 import { SeijouSchool, RinmeikanSchool } from "../../utils/photo_arr";
-
-import "./Characters.scss";
-import "react-lazy-load-image-component/src/effects/blur.css";
 import { useDispatch, useSelector } from "react-redux";
 import { setSingleChara } from "../../store/actions/actions/charaActions";
 import { GlobalState, CharaType } from "../../store/interface/interface";
-import { fetchAllDataFromJson } from "../../store/axiosfunc/axios_dev-json";
+import {
+  fetchAllDataFromJson,
+  fecthAllCharas,
+} from "../../store/axiosfunc/axios_dev-json";
+
+import "./Characters.scss";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Characters = () => {
   const history = useHistory();
@@ -28,7 +31,8 @@ const Characters = () => {
   React.useEffect(() => {
     window.scrollTo(0, 0);
     if (charaState.charas.length === 0) {
-      dispatch(fetchAllDataFromJson());
+      //dispatch(fetchAllDataFromJson());
+      dispatch(fecthAllCharas());
     }
     document.title = "Characters | Shoujo Kageki Revue Starlight";
   }, []);

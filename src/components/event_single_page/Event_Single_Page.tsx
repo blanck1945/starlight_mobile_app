@@ -2,17 +2,17 @@ import * as React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { GlobalState } from "../../store/interface/interface";
 import Title_Header from "../characters/title_header/Title_Header";
-
 import Event_dis from "../home_header/events_box/event_dis/Event_dis";
 import Youtube_banner from "../home_header/youtube_banner/Youtube_banner";
 import { fetchSingleEvent } from "../../store/axiosfunc/axiosfunc";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import "react-lazy-load-image-component/src/effects/blur.css";
-
-import "./Event_Single_Page.scss";
 import Event_Header from "./event_header/Event_Header";
 import Event_Text from "./event_text/Event_Text";
 import Event_Social_Div from "./event_social_div/Event_Social_Div";
+
+import "react-lazy-load-image-component/src/effects/blur.css";
+import "./Event_Single_Page.scss";
+
 const event_img = require("../../assets/event_img/taiwan_event.jpg");
 
 const Event_Single_Page = () => {

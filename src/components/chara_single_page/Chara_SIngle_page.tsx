@@ -3,15 +3,16 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 import { motion } from "framer-motion";
-import "react-lazy-load-image-component/src/effects/blur.css";
-import "./Chara_Single_Page.scss";
 import Youtube_banner from "../home_header/youtube_banner/Youtube_banner";
 import { useDispatch, useSelector } from "react-redux";
-import { GlobalState, Photo, CharaType } from "../../store/interface/interface";
+import { GlobalState } from "../../store/interface/interface";
 import { cleanSingleChara } from "../../store/actions/actions/charaActions";
 import { revueArr, studentArr } from "../../utils/student_photo";
 import { Link } from "react-router-dom";
 import { fetchSingleDevChara } from "../../store/axiosfunc/axiosfunc";
+
+import "react-lazy-load-image-component/src/effects/blur.css";
+import "./Chara_Single_Page.scss";
 
 const flower = require("../../assets/utils-img/btn-switch-uniform-visible-karen.png");
 const crown = require("../../assets/utils-img/btn-switch-revue-visible-karen.png");
@@ -55,6 +56,15 @@ const Chara_SIngle_page = () => {
     }
   };
 
+  const getString = (data: string, parameter: string) => {
+    const newArr = data.split(" ");
+    if (parameter === "name") {
+      return newArr[0];
+    } else {
+      return newArr[1];
+    }
+  };
+
   return (
     <div className="chara_single_div">
       {charaState.single_chara ? (
@@ -62,12 +72,13 @@ const Chara_SIngle_page = () => {
           className="chara_single_page"
           style={{ background: charaState.single_chara.chara_color }}
         >
-          <h4 className="single_overlay">
-            {charaState.single_chara.chara_name}
-          </h4>
+          <div className="single_overlay">
+            <h4>{getString(charaState.single_chara.chara_name, "name")}</h4>
+            <h4>{getString(charaState.single_chara.chara_name, "surname")}</h4>
+          </div>
           <div className="chara_data">
             <div className="data_top">
-              <img src={flower.default} alt="flower" className="flower_logo" />
+              <img src={crown.default} alt="flower" className="flower_logo" />
               <div className="top_school">
                 <h4>{charaState.single_chara.chara_school}</h4>
                 <h4>
@@ -76,13 +87,16 @@ const Chara_SIngle_page = () => {
                 </h4>
               </div>
             </div>
-            <div className="data_center">
+            <div className="data_name">
               <h3 className="center_name">
                 {charaState.single_chara.chara_name}
               </h3>
               <h4 className="center_voice">
                 Voice: {charaState.single_chara.chara_voice}
               </h4>
+            </div>
+            <div className="data_video"></div>
+            <div className="data_center">
               <div className="img_btn_box">
                 <img
                   src={crown.default}
