@@ -8,7 +8,7 @@ export interface GetEvents {
 
 export interface GetSingleEvent {
   type: typeof eventTypes.GET_SINGLE_EVENT;
-  payload: EventType;
+  payload: number;
 }
 
 export type EventActions = GetEvents | GetSingleEvent;

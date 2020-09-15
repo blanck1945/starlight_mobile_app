@@ -3,9 +3,9 @@ import { EventType } from "../../../../store/interface/interface";
 
 import "./Event_dis.scss";
 import { useDispatch } from "react-redux";
-import { fetchSingleEvent } from "../../../../store/axiosfunc/axiosfunc";
 import { useHistory } from "react-router-dom";
 import { fetchSingleDevEvent } from "../../../../store/axiosfunc/axios_dev-json";
+import { setSingleEvent } from "../../../../store/actions/actions/eventsActions";
 
 interface EventDisProps {
   event: EventType;
@@ -16,7 +16,7 @@ const Event_dis = ({ event }: EventDisProps) => {
   const history = useHistory();
 
   const goToSinglePage = async (id: number) => {
-    await dispatch(fetchSingleDevEvent(id));
+    await dispatch(setSingleEvent(id));
     history.push("/single_event");
   };
 

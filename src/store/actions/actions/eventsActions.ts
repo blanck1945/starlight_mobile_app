@@ -6,7 +6,7 @@ export const setEvents = (payload: EventType[]) => ({
   payload,
 });
 
-export const setSingleEvent = (payload: EventType) => ({
+export const setSingleEvent = (payload: number) => ({
   type: eventTypes.GET_SINGLE_EVENT,
   payload,
 });

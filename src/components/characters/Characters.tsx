@@ -8,29 +8,29 @@ import { SeijouSchool, RinmeikanSchool } from "../../utils/photo_arr";
 
 import "./Characters.scss";
 import "react-lazy-load-image-component/src/effects/blur.css";
-import { useDispatch } from "react-redux";
-import {
-  fetchCharas,
-  fetchSingleChara,
-  fecthAllCharas,
-  fetchSingleDevChara,
-} from "../../store/axiosfunc/axiosfunc";
-import { setPageTitle } from "../../store/actions/actions/utilsActions";
+import { useDispatch, useSelector } from "react-redux";
+import { setSingleChara } from "../../store/actions/actions/charaActions";
+import { GlobalState, CharaType } from "../../store/interface/interface";
+import { fetchAllDataFromJson } from "../../store/axiosfunc/axios_dev-json";
 
 const Characters = () => {
   const history = useHistory();
   const dispatch = useDispatch();
+  const charaState = useSelector((state: GlobalState) => state.charaReducer);
+  console.log(charaState.charas);
 
-  const fetchSingle = (id: number) => {
-    dispatch(fetchSingleDevChara(id));
-    //dispatch(fetchSingleChara(id));
+  const fetchSingle = async (id: number) => {
+    await dispatch(setSingleChara(id));
+
     history.push("/single");
   };
 
   React.useEffect(() => {
     window.scrollTo(0, 0);
-    dispatch(fecthAllCharas());
-    dispatch(setPageTitle("Characters | Shoujo Kageki Revue Starlight"));
+    if (charaState.charas.length === 0) {
+      dispatch(fetchAllDataFromJson());
+    }
+    document.title = "Characters | Shoujo Kageki Revue Starlight";
   }, []);
 
   return (

@@ -23,7 +23,7 @@ export interface StartTheGame {
 
 export interface GetSingleChara {
   type: typeof charaTypes.GET_SINGLE_CHARA;
-  payload: CharaType;
+  payload: number;
 }
 
 export interface DestroySingleChara {

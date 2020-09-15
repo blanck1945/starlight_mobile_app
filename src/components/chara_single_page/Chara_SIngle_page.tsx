@@ -17,10 +17,10 @@ const flower = require("../../assets/utils-img/btn-switch-uniform-visible-karen.
 const crown = require("../../assets/utils-img/btn-switch-revue-visible-karen.png");
 
 const Chara_SIngle_page = () => {
+  const dispatch = useDispatch();
   const [img, setImg] = React.useState<boolean>(true);
   const [loading, setLoading] = React.useState<boolean>(false);
   const charaState = useSelector((state: GlobalState) => state.charaReducer);
-  const dispatch = useDispatch();
 
   React.useEffect(() => {
     window.scrollTo(0, 0);
@@ -31,15 +31,16 @@ const Chara_SIngle_page = () => {
   const getRevuePhoto = () => {
     const photo: any = revueArr.find(
       (el: any, index: number) =>
-        index === charaState.single_chara.chara_revue_img
+        index === charaState?.single_chara?.chara_revue_img
     );
+
     return photo.default;
   };
 
   const getStudentPhoto = () => {
     const photo: any = studentArr.find(
       (el: any, index: number) =>
-        index === charaState.single_chara.chara_student_img
+        index === charaState?.single_chara?.chara_student_img
     );
     return photo.default;
   };
@@ -102,9 +103,11 @@ const Chara_SIngle_page = () => {
                 />
               </div>
               <div className="chara_description_box">
-                {charaState.single_chara.chara_description.map((el: string) => (
-                  <h3 className="description_item">{el}</h3>
-                ))}
+                {charaState.single_chara?.chara_description?.map(
+                  (el: string) => (
+                    <h3 className="description_item">{el}</h3>
+                  )
+                )}
               </div>
             </div>
           </div>

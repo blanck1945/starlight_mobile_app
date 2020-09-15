@@ -6,7 +6,7 @@ export const setCharas = (payload: CharaType) => ({
   payload,
 });
 
-export const setSingleChara = (payload: CharaType) => ({
+export const setSingleChara = (payload: number) => ({
   type: charaTypes.GET_SINGLE_CHARA,
   payload,
 });

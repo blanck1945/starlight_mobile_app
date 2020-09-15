@@ -6,11 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack-dev-server",
-    "start": "concurrently \"json-server --watch db.json\" \"npm start\"",
-    "start2": "webpack-dev-server --config webpack.dev.js",
-    "build": "concurrently \"json-server --watch db.json\" \"npm start\"",
+    "start": "webpack-dev-server --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
     "server": "json-server --watch db.json",
-    "json-dev": "concurrently \"json-server --watch db.json\" \"npm start\""
+    "json-dev": "concurrently \"json-server --watch db.json -p 5500\" \"npm run start2\""
   },
   "keywords": [],
   "author": "",

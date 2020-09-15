@@ -1,5 +1,5 @@
 import * as eventTypes from "../ReduxTypes/eventTypes";
-import { EventState } from "../interface/interface";
+import { EventState, EventType } from "../interface/interface";
 import { EventActions } from "../actions/interfaces/eventsInterfaces";
 
 const initialState: EventState = {
@@ -17,7 +17,9 @@ export default (state = initialState, action: EventActions) => {
     case eventTypes.GET_SINGLE_EVENT:
       return {
         ...state,
-        single_event: action.payload,
+        single_event: state.events.find(
+          (el: EventType) => el.id === action.payload
+        ),
       };
 
     default:

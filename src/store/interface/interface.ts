@@ -136,8 +136,13 @@ export interface EventState {
   single_event: EventType;
 }
 
+export interface DataState {
+  data: any;
+}
+
 export interface GlobalState {
   eventReducer: EventState;
   charaReducer: CharaState;
   serverReducer: UtilsState;
+  global: DataState;
 }

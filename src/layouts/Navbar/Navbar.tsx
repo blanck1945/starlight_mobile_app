@@ -13,7 +13,6 @@ const Navbar = () => {
     };
   }, [scroll]);
 
-  console.log(scroll);
   return (
     <div className={scroll < 75 ? "navbar" : "navbar small_nav"}>
       <div

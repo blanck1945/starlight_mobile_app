@@ -3,7 +3,28 @@ import { Dispatch } from "react";
 import { Action } from "redux";
 import { http } from "../../utils/api";
 import { setEvents, setSingleEvent } from "../actions/actions/eventsActions";
-import { selectChara, enterTheGame } from "../actions/actions/charaActions";
+import {
+  selectChara,
+  enterTheGame,
+  setCharas,
+} from "../actions/actions/charaActions";
+import { fetchAllData } from "../actions/globalActions/actions";
+
+export const fetchAllDataFromJson = () => {
+  return async (dispatch: Dispatch<Action>) => {
+    try {
+      const { data } = await Axios.get(
+        "https://json-starlight-3x2g4tzky.vercel.app/db.json"
+      );
+      console.log(data);
+      dispatch(fetchAllData(data));
+      dispatch(setEvents(data.events));
+      dispatch(setCharas(data.chara));
+    } catch (err) {
+      console.log(err);
+    }
+  };
+};
 
 export const fetchAllEvents = () => {
   return async (dispatch: Dispatch<Action>) => {

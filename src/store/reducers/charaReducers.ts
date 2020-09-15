@@ -1,5 +1,5 @@
 import * as charaTypes from "../ReduxTypes/charaTypes";
-import { CharaState, GameChara } from "../interface/interface";
+import { CharaState, GameChara, CharaType } from "../interface/interface";
 import { CharaActions } from "../actions/interfaces/charaInterfaces";
 
 const charaInitialState: CharaState = {
@@ -19,7 +19,9 @@ export default (state = charaInitialState, action: CharaActions) => {
     case charaTypes.GET_SINGLE_CHARA:
       return {
         ...state,
-        single_chara: action.payload,
+        single_chara: state.charas.find((el: CharaType) =>
+          el.id === action.payload ? { ...el } : null
+        ),
       };
     case charaTypes.CLEAN_SINGLE_CHARA:
       return {

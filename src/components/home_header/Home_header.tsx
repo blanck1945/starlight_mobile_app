@@ -9,7 +9,10 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import { useDispatch, useSelector } from "react-redux";
 import { GlobalState } from "../../store/interface/interface";
-import { fetchAllEvents } from "../../store/axiosfunc/axios_dev-json";
+import {
+  fetchAllEvents,
+  fetchAllDataFromJson,
+} from "../../store/axiosfunc/axios_dev-json";
 
 const logo = require("../../assets/nav/logo.jpg");
 const crown = require("../../assets/utils-img/btn-switch-revue-visible-karen.png");
@@ -21,7 +24,7 @@ const Home_header = () => {
   React.useEffect(() => {
     window.scrollTo(0, 0);
     dispatach(fetchAllEvents());
-
+    dispatach(fetchAllDataFromJson());
     document.title = "Shoujo Kageki Revue Starlight";
   }, []);
 
