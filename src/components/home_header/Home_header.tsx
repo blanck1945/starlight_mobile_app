@@ -23,8 +23,10 @@ const Home_header = () => {
 
   React.useEffect(() => {
     window.scrollTo(0, 0);
+    dispatach(fetchAllDataFromJson());
+
+    //Esta función trabaja con el servidor de pruebas json-server -p 3000
     //dispatach(fetchAllEvents());
-    //dispatach(fetchAllDataFromJson());
     document.title = "Shoujo Kageki Revue Starlight";
   }, []);
 

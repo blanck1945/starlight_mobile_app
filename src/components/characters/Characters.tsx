@@ -31,8 +31,10 @@ const Characters = () => {
   React.useEffect(() => {
     window.scrollTo(0, 0);
     if (charaState.charas.length === 0) {
-      //dispatch(fetchAllDataFromJson());
-      dispatch(fecthAllCharas());
+      dispatch(fetchAllDataFromJson());
+
+      //Esta funciona trabaja con el servidor de pruebas json-server
+      //dispatch(fecthAllCharas());
     }
     document.title = "Characters | Shoujo Kageki Revue Starlight";
   }, []);
