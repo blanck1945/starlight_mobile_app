@@ -1,7 +1,7 @@
 import * as React from "react";
 import * as reactDOM from "react-dom";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Navbar from "./layouts/Navbar/navbar";
+import Navbar from "./layouts/Navbar/Navbar";
 import Home_header from "./components/home_header/Home_header";
 import Characters from "./components/characters/Characters";
 import Main_footer from "./components/home_header/main_footer/Main_footer";
