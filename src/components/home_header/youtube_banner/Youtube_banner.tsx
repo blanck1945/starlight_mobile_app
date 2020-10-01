@@ -21,19 +21,22 @@ const Youtube_banner = () => {
             Characters
           </Link>
         </div>
-        <div className="youtube_link">
+        <a
+          href="https://www.youtube.com/c/starlight_ch/featured"
+          className="youtube_link"
+        >
           <AiFillYoutube className="youtube" />
           <div className="youtube_center">
-            <h3>Official</h3>
-            <h3>Youtube</h3>
-            <h3>Channel</h3>
+            <h3 className="links">Official</h3>
+            <h3 className="links">Youtube</h3>
+            <h3 className="links">Channel</h3>
           </div>
           <img
             src="https://2.bp.blogspot.com/-4HrUh4F_JFk/W7A1d4njrsI/AAAAAAAATG0/7QCYI9SbWD8CSjZ1LNsGUJUCMEQAO9iDACLcBGAs/s1600/Shoujo%2BKageki%2BRevue%2BStarlight.jpg"
             alt="karen&hikari"
             className="karen_hikari"
           />
-        </div>
+        </a>
       </div>
     </div>
   );

@@ -6,7 +6,10 @@ import { motion } from "framer-motion";
 import Youtube_banner from "../home_header/youtube_banner/Youtube_banner";
 import { useDispatch, useSelector } from "react-redux";
 import { GlobalState } from "../../store/interface/interface";
-import { cleanSingleChara } from "../../store/actions/actions/charaActions";
+import {
+  cleanSingleChara,
+  setSingleChara,
+} from "../../store/actions/actions/charaActions";
 import { revueArr, studentArr } from "../../utils/student_photo";
 import { Link } from "react-router-dom";
 import { fetchSingleDevChara } from "../../store/axiosfunc/axiosfunc";
@@ -47,12 +50,13 @@ const Chara_SIngle_page = () => {
   };
 
   const consoleId = (id: number) => {
+    console.log("Using this route");
     if (id === 0) {
-      dispatch(fetchSingleDevChara(6));
+      dispatch(setSingleChara(6));
     } else if (id === 7) {
-      dispatch(fetchSingleDevChara(1));
+      dispatch(setSingleChara(1));
     } else {
-      dispatch(fetchSingleDevChara(id));
+      dispatch(setSingleChara(id));
     }
   };
 
@@ -118,8 +122,10 @@ const Chara_SIngle_page = () => {
               </div>
               <div className="chara_description_box">
                 {charaState.single_chara?.chara_description?.map(
-                  (el: string) => (
-                    <h3 className="description_item">{el}</h3>
+                  (el: string, index: number) => (
+                    <h3 key={index} className="description_item">
+                      {el}
+                    </h3>
                   )
                 )}
               </div>

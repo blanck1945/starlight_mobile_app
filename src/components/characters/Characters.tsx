@@ -7,11 +7,8 @@ import { motion } from "framer-motion";
 import { SeijouSchool, RinmeikanSchool } from "../../utils/photo_arr";
 import { useDispatch, useSelector } from "react-redux";
 import { setSingleChara } from "../../store/actions/actions/charaActions";
-import { GlobalState, CharaType } from "../../store/interface/interface";
-import {
-  fetchAllDataFromJson,
-  fecthAllCharas,
-} from "../../store/axiosfunc/axios_dev-json";
+import { GlobalState } from "../../store/interface/interface";
+import { fetchAllDataFromJson } from "../../store/axiosfunc/axios_dev-json";
 
 import "./Characters.scss";
 import "react-lazy-load-image-component/src/effects/blur.css";

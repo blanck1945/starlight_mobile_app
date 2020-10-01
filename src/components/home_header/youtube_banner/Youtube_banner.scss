@@ -54,22 +54,20 @@
       padding-left: 15px;
       cursor: pointer;
       border: 1px solid black;
+      text-decoration: none;
       transition: 0.3s ease-in-out;
       .youtube {
         font-size: 2.5rem;
         color: #ff0000;
       }
-      .youtube > h3 {
+      .youtube_center > h3 {
         font-family: $jp;
-        font-size: 0.9rem;
+        color: $karen;
+        font-size: 1rem;
       }
       .karen_hikari {
         width: 111px;
       }
-    }
-    .youtube_link:hover {
-      opacity: 0.8;
-      transition: 0.3s ease-in-out;
     }
   }
 }

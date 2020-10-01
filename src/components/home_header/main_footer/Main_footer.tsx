@@ -59,13 +59,15 @@ const Main_footer = () => {
         </div>
       </div>
       <div className="footer_social">
-        <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fwww.en.revuestarlight-relive.com%2F&text=Revue%20Starlight%20Re%20LIVE%20Official%20Site&hashtags=RevueStarlight%2CRevueStarlightReLIVE">
+        <a href="https://twitter.com/revuestarlight">
           <FaTwitter className="twi social_icon" />
         </a>
         <FaFacebookF className="face social_icon" />
       </div>
       <div className="logo_box">
-        <img src={logo.default} alt="logo" className="logo" />
+        <a href="https://revuestarlight.com/">
+          <img src={logo.default} alt="logo" className="logo" />
+        </a>
         <div className="owner_box"></div>
         <h5 className="inq">Inquiries</h5>
         <h5 className="inq">
