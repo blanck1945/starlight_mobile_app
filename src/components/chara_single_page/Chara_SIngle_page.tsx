@@ -49,12 +49,12 @@ const Chara_SIngle_page = () => {
     return photo.default;
   };
 
-  const consoleId =async (id: number) => {
+  const consoleId = async (id: number) => {
     console.log("Using this route");
     if (id === 0) {
-     await dispatch(setSingleChara(6));
+      await dispatch(setSingleChara(6));
     } else if (id === 7) {
-     await  dispatch(setSingleChara(1));
+      await dispatch(setSingleChara(1));
     } else {
       await dispatch(setSingleChara(id));
     }
@@ -135,7 +135,6 @@ const Chara_SIngle_page = () => {
             className="chara_img"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 0.5 }}
           >
             <LazyLoadImage
               effect="blur"
